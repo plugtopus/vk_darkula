@@ -7,9 +7,9 @@
    },
    "browser_action": {
       "default_icon": {
-         "16": "img/popup_dark_16.png",
-         "24": "img/popup_dark_24.png",
-         "32": "img/popup_dark_32.png"
+         "16": "img/dark_16.png",
+         "24": "img/dark_24.png",
+         "32": "img/dark_32.png"
       }
    },
    "content_scripts": [ {

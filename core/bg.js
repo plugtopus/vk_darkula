@@ -19,7 +19,7 @@ var tabs = {},
 
 function setIcon() {
     chrome['browserAction'].setIcon({
-        path: "img/popup_" + localStorage.mode + "_32.png"
+        path: "img/" + localStorage.mode + "_32.png"
     })
 }
 
