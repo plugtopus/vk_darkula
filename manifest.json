@@ -1,0 +1,37 @@
+{
+   "author": "Plugtopus Agency",
+   "homepage_url": "https://plugtopus.agency",
+   "default_locale": "ru",
+   "background": {
+      "scripts": [ "core/bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "img/popup_dark_16.png",
+         "24": "img/popup_dark_24.png",
+         "32": "img/popup_dark_32.png"
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "css/vk.css" ],
+      "js": [ "core/preload.js" ],
+      "matches": [ "*://vk.com/*", "*://oauth.vk.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "core/postload.js" ],
+      "matches": [ "*://vk.com/*", "*://oauth.vk.com/*" ]
+   } ],
+   "description": "__MSG_desc__",
+   "icons": {
+      "256": "img/256.png",
+      "128": "img/128.png",
+      "64": "img/64.png",
+      "48": "img/48.png"
+
+   },
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "browsingData", "cookies", "storage", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.03.07.1"
+}
